@@ -75,7 +75,7 @@ $socials=array( // You can change the providers and their classes.
 $params=array(
 		// this is used in contact page
 		'adminEmail'=>'arbprint@mail.ru',
-		'YMapKey'=>'AEmk904BAAAAUCGkRAMAvTSoZfbI0tw8-95WnNcZkDQqXzAAAAAAAAAAAAB49EpXB9Mlar25hE3r2xY70FiRmQ==',
+		'YMapKey'=>'AM3cUk8BAAAAI-2PMwIAKrG8YMhoX5wvJ0TB8381tL8mJiQAAAAAAAAAAADhEIUyWSBIF2IlzMhh0O9pPY-Xeg==',
 		//'layout'=>'startpage',
 
 	);		

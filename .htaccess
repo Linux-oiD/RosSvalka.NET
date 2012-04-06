@@ -1,6 +1,17 @@
 Options +FollowSymLinks
+
+deny from all
+allow from 212.232.76.16 188.134.29.145 77.221.128.
+
 IndexIgnore */*
 RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^rossvalka.info$ [NC]
+RewriteRule ^(.*)$ http://rossvalka.net/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.rossvalka.info$ [NC]
+RewriteRule ^(.*)$ http://rossvalka.net/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.rossvalka.net$ [NC]
+RewriteRule ^(.*)$ http://rossvalka.net/$1 [R=301,L]
 
 # if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -9,4 +20,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # otherwise forward it to index.php
 RewriteRule . index.php
 
-Redirect 301 /personal/holes.php http://rosyama.ru/holes/personal/
+Redirect 301 /personal/holes.php http://rossvalka.net/holes/personal/
